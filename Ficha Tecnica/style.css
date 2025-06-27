@@ -1,16 +1,219 @@
-.layout {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #ffffff;
+  color: #000;
+
+
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+
+}
+
+#h1 {
+  font-size: 2.5rem;
+  color: #001e50;
+}
+
+#h2 {
+  font-size: 1rem;
+  color: #666;
+  letter-spacing: 1px;
+
+}
+
+.modelo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+.modelo-info {
+  max-width: 200px;
+  text-align: center;
+}
+
+.modelo-info .serie {
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+}
+
+.modelo-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+  margin-left: 1rem;
+}
+
+.modelo-card img {
+  width: 100%;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.foto-carro { 
+    
+    position: relative;
+    flex:1;
+    text-align: center;
+}
+
+.m3-g80 {
+ font-size: 12rem;
+  color: #f0f0f0;
+  position: absolute;
+  top: -40px;
+  left: 30px;
+  z-index: 0;
+
+}
+
+.carro-img {
+  width: 100%;
+  max-width: 600px;
+  position: relative;
+  z-index: 1;
+}
+
+.spec {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #001e50;
+}
+
+
+.logo-M {
+  width: 24px;
+  vertical-align: middle;
+  margin-left: 4px;
+}
+
+.modelo-centro img {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
+    height: 15rem;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+
+  background-image: url(./Imagens_M3/bmw-g80-m33-series.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 10rem;
+    border-bottom: 5px solid black;
+
+}
+
+.descricao {
+    padding-top: 25rem;
+    max-width: 30%;
+    margin: 1rem;
     
 }
 
-.info {
-
-    display: flex;
-    justify-content: space-around;
-
-    
+#descricao-title {
+    margin-top: 1rem;
+    color:#ccc;
 }
+
+#descricao-meio {
+    color: #979797;
+
+}
+
+#descricao{
+    margin-top:1rem;
+    padding: 1rem;
+    color:#f0f0f0;
+    background-color: rgba(0, 0, 0, 0.226);
+    border-radius: 5px;
+    font-size:1.2rem;
+}
+
+.dinamica-dirigir {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: #d8d7d7;
+}
+.dinamica-dirigir h1 {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+.card-motor {
+  margin: 2rem;
+}
+
+.card-cambio {
+  margin: 2rem;
+}
+
+.card-tracao {
+  margin: 2rem;
+}
+
+#motor-imagem {
+  max-height: 100%;
+  width: 23rem;
+  border: 3px solid #666;
+}
+#cambio-imagem {
+  max-height: 120%;
+  width: 23rem;
+  border: 3px solid #666;
+}
+
+#tracao-imagem {
+  max-height: 100%;
+  width: 23rem;
+  border: 3px solid #666;
+}
+
+#motor-title {
+  display: flex;
+  font-size: 1.4rem;
+}
+
+#cambio-title {
+  display: flex;
+  font-size: 1.4rem;
+}
+
+#tracao-title {
+  display: flex;
+  font-size: 1.4rem;
+}
+#motor-desc {
+  max-width: 22rem;
+}
+
+#cambio-desc {
+  max-width: 22rem;
+}
+
+#tracao-desc {
+  max-width: 22rem;
+}
+
