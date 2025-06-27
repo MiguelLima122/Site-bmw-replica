@@ -5,7 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BMW M3 Competition</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
+  <style>
+
+    .carousel-inner img {
+      margin: auto;
+    }
+    .carousel {
+      width: 60%; /* ajuste conforme necessário */
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -29,9 +39,11 @@
       </div>
       
       <div class="foto-carro">
+        <div id="carrinho">
         <h1 class="m3-g80-h1">M3 G80</h1>
         <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-733156fayVOhiL0onTdzmlD4%25P6rbKM4%25jvQy2CpLn6p3aJ9Ss4trb4gxmZNzOSnjXWPkJEF%255SYCjyON74mvhB1VWxbZG%25I4Y%25E9CpL0FkI%25mJk2YInwlQaGcpRB%25Hs60KEFY8UG4fXJokGT1ZwljT5GaRhj5sgXAOHCrmu09DP05CZHOdnuAPrKozL1FUHbIkIVk956cxw8jwEBCutE6hPHtTScfbYlnWhcavQF3a%25uqVVAfoUMA8ZobMsayjnt61agOyby3KnvIT9TggO2B3ibVcIjedw925BDMztij9eqhk7wHiMLoACt%25AhJHFl7f6ou%25KXgs1HSfWQvC0%25V1Pa2MsfNEbn%25hV10s9Of0JE4riI14oscZwBEhmrxRtesoPZ857MrNRRUgChZu85GvloRkdgp2XH5Axv6jQ%25g4O2YDafvOajmqn12cUDyLOEjxDqTJIsHT6L3uBr%254TJdSeZfgNuzVMR1KMSkNh5EWUVA0ogsPANF4HvrSX0Kc%252ZV%254WxfjRN2cP81D6YxxbUEqY3P89GsLm7sUiprJyC4Gw6ZuTlhptYRS3HO67m5Vd%25fYCygNzTBmlTv0kPeyX324BVzTQdjcett3azDxMsddnkq8hJgzOALUouykIFJGFYXABKupKovFeWS6WHAKMPVYPpvWhbNmbEYPo90y9P6bHi4TidA9%25wc3wt5iftxdt7Uw178z7fQtECUkC1J7slGAlEsCrXpFRillZQ6K5hq" alt="BMW M3 Competition" class="carro-img" />
-      <div>
+        </div>
+        <div id="div-logo">
         <img id=logo-imagem src="Imagens_M3/bmw-transparent-bmw-free-free-png.webp" alt="">
       </div>
       </div>
@@ -74,6 +86,33 @@
     </div>
   </div>
 
+  <p id="cores">Cores disponíveis</p>
 
+  <div class="d-flex justify-content-center">
+  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner text-center">
+      <div class="carousel-item active">
+        <img src="Imagens_M3/cinza.png" class="d-block w-50" alt="cinza">
+      </div>
+      <div class="carousel-item">
+        <img src="Imagens_M3/azul.png" class="d-block w-50" alt="azul">
+      </div>
+      <div class="carousel-item">
+        <img src="Imagens_M3/preto.png" class="d-block w-50" alt="preto">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+      <span class="visually-hidden">Voltar</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+      <span class="visually-hidden">Próximo</span>
+    </button>
+  </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 </html>

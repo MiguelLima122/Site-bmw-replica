@@ -18,6 +18,7 @@ header {
 
 }
 
+
 #h1 {
   font-size: 2.5rem;
   color: #001e50;
@@ -88,11 +89,16 @@ header {
 }
 
 #logo-imagem {
+
   height: 100%;
   width: 10rem;
-
 }
 
+#div-logo {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+}
 .spec {
   display: flex;
   justify-content: space-evenly;
@@ -225,3 +231,10 @@ footer {
   max-width: 22rem;
 }
 
+#cores {
+
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  font-family: 'Open Sans', sans-serif;
+}
